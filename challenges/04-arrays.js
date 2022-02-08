@@ -8,13 +8,10 @@
 4. re-assign last array item to the actual fruit
 5. log both first fruit variable and entire fruits array
 
-
 */
 
 const fruits = ['apple', 'banana', 'orange', 45];
 
 const firstFruit = fruits[0];
 fruits[3] = 'lemon';
-
-console.log(firstFruit);
-console.log(fruits);
+console.log(firstFruit, fruits);

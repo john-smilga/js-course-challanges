@@ -1,5 +1,4 @@
 /*
-
 ## Concatenate Strings #2
 
 1. create "street" and "country" variables
@@ -10,9 +9,9 @@
 5. log "fullMailingAddress" in the console
 
 */
+
 const street = 'main street';
 const country = 'USA';
 
-const fullMailingAddress = street + ' ' + country;
-
+const fullMailingAddress = street + '' + country;
 console.log(fullMailingAddress);

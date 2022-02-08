@@ -1,5 +1,4 @@
-/*
-
+/* 
 ## Objects #6
 
 1. create car object

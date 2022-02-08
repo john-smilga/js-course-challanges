@@ -1,5 +1,7 @@
 // have access to students from data.js
+
 const updatedStudents = students.map(function (student) {
+  // console.log(student);
   student.role = 'student';
   return student;
 });
@@ -7,32 +9,47 @@ const updatedStudents = students.map(function (student) {
 // console.log(updatedStudents);
 
 const highScores = students.filter(function (student) {
-  //  a value that coerces to true - MDN Docs
   // if (student.score >= 80) {
-  //   return student;
+  //   return student; //  a value that coerces to true
   // }
+
   // if (student.score >= 80) return student;
   return student.score >= 80;
 });
 
 // console.log(highScores);
 
-const specificId = students.find(function (student) {
-  return student.id === 1;
+const specificId = students.find(function (banana) {
+  return banana.id === 6;
 });
 
+const fruits = ['banana', 'orange'];
+
+const random = fruits.find(function (fruit) {
+  return fruit === 'orange';
+});
+
+// console.log(random);
 // console.log(specificId);
 
 const averageScore =
   students.reduce(function (scoresTotal, student) {
+    // console.log(student);
+    // console.log(scoresTotal);
     return scoresTotal + student.score;
   }, 0) / students.length;
 
 // console.log(averageScore);
 
+const subject = 'art';
+
+const total = {};
+total[subject] = 'some value';
+// console.log(total);
+
 const survey = students.reduce(function (survey, student) {
+  // console.log(student.favoriteSubject);
   const favSubject = student.favoriteSubject;
-  // console.log(favSubject);
   if (survey[favSubject]) {
     survey[favSubject] = survey[favSubject] + 1;
   } else {
@@ -41,4 +58,4 @@ const survey = students.reduce(function (survey, student) {
   return survey;
 }, {});
 
-// console.log(survey);
+console.log(survey);

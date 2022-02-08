@@ -43,7 +43,7 @@
 2. add two parameters subTotal, tax
 3. return sum of parameters
 4. create 3 vars "order1","order2","order3"
-5. call "calculateTotal", pass in some values and assign result to each order
+5. call calculateResult, pass in some values and assign result to each order
 6. log all three orders
 7. refactor "calculateTotal" to function expression
 
@@ -65,16 +65,16 @@
    status ('resident', 'tourist') keys
 
 3. setup if else, condition where
-   age must be >= 18 and status must be
+   age must be bigger than 18 and status must be
    equal to 'resident'
 4. test with both objects
 
 ## Strings #8
 
-1. create function "fullName"
+1. create function fullName
 2. accept two parameters "firstName", "lastName"
 3. add them together (concat) and return result in uppercase
-4. invoke "fullName" and pass some values
+4. invoke fullName and pass some values
 5. log result
 6. change the order of arguments
 7. refactor to object parameter
@@ -92,7 +92,13 @@ Multiple Videos
    score: 80,
    favoriteSubject: 'math',
    },
-2. use separate data file
+
+#### Use Multiple Files
+
+- easer to manage code base (file, project)
+- order matters
+- other ways to achieve the same result (ES6 modules, fetch DB )
+- not limited to just static data
 
 #### updatedStudents
 
